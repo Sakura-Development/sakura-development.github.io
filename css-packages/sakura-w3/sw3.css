@@ -166,7 +166,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .sw3-orange,.sw3-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
 .sw3-deep-orange,.sw3-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
 .sw3-pink,.sw3-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
-.sw3-sakura,.sw3-hover-sakura:hover{color:#fff!important;background-color:#ff3377!important}
+.sw3-sakura,.sw3-hover-sakura:hover{color:#fff!important;background-color:#F06292!important}
 .sw3-purple,.sw3-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
 .sw3-deep-purple,.sw3-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
 .sw3-red,.sw3-hover-red:hover{color:#fff!important;background-color:#f44336!important}
@@ -197,6 +197,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .sw3-text-orange,.sw3-hover-text-orange:hover{color:#ff9800!important}
 .sw3-text-deep-orange,.sw3-hover-text-deep-orange:hover{color:#ff5722!important}
 .sw3-text-pink,.sw3-hover-text-pink:hover{color:#e91e63!important}
+.sw3-text-sakura,.sw3-hover-text-sakura:hover{color:#F06292!important}
 .sw3-text-purple,.sw3-hover-text-purple:hover{color:#9c27b0!important}
 .sw3-text-deep-purple,.sw3-hover-text-deep-purple:hover{color:#673ab7!important}
 .sw3-text-red,.sw3-hover-text-red:hover{color:#f44336!important}
@@ -223,6 +224,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .sw3-border-orange,.sw3-hover-border-orange:hover{border-color:#ff9800!important}
 .sw3-border-deep-orange,.sw3-hover-border-deep-orange:hover{border-color:#ff5722!important}
 .sw3-border-pink,.sw3-hover-border-pink:hover{border-color:#e91e63!important}
+.sw3-border-sakura,.sw3-hover-border-sakura:hover{border-color:#F06292!important}
 .sw3-border-purple,.sw3-hover-border-purple:hover{border-color:#9c27b0!important}
 .sw3-border-deep-purple,.sw3-hover-border-deep-purple:hover{border-color:#673ab7!important}
 .sw3-border-red,.sw3-hover-border-red:hover{border-color:#f44336!important}
