@@ -1,1 +1,0 @@
-Test branch of Mugen frontend, switching to angular and dont want to break all the working stuff.
