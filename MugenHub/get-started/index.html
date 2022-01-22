@@ -73,13 +73,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <p class="sw3-sakura w3-hover-white w3-button w3-round-xlarge w3-small" onclick="walletDetails()">New Wallet</p>
       <script>
         function walletDetails() {
+          const generator = require(["js/newWallet.js"]);
           var token = Keys.token;
           var public = Keys.public;
           var private = Keys.private;
 
           var walletString = "Token: " + token + "\nPublic: " + public + "\nPrivate: " + private;
 
-          document.getElementById('walletInfo').innerHTML = walletString;
+          document.getElementById("walletInfo").innerHTML = walletString;
         }
       </script>
       <p id="walletInfo" class="sw3-text-white"></p>

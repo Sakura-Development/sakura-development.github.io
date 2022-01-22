@@ -11,3 +11,5 @@ var Keys = {
     public = publicKey,
     private = privateKey
 };
+
+module.exports = {Keys};
