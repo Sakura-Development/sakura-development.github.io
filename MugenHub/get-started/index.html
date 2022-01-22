@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 <script src="https://kit.fontawesome.com/f712031e9d.js" crossorigin="anonymous"></script>
 <script src="js/requireJs.js"></script>
+<script type="text/javascript" src="js/newWallet.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -69,9 +70,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
     <div class="w3-twothird w3-text-white">
       <h1 class="sw3-text-sakura">Generate Wallet</h1>
-      <!-- p class="sw3-sakura w3-hover-white w3-button w3-round-xlarge w3-large" onclick="document.getElementById('newWallet').src = js/newWallet.js">New Wallet</p>
-      <p id="newWallet"></p -->
-      <script src="js/newWallet.js"></script>
+      <p class="sw3-sakura w3-hover-white w3-button w3-round-xlarge w3-small" onclick="walletDetails()">New Wallet</p>
+      <script>
+        function walletDetails() {
+          var token = Keys.token;
+          var public = Keys.public;
+          var private = Keys.private;
+
+          var walletString = "Token: " + token + "\nPublic: " + public + "\nPrivate: " + private;
+
+          document.getElementById('walletInfo').innerHTML = walletString;
+        }
+      </script>
+      <p id="walletInfo" class="sw3-text-white"></p>
     </div>
   </div>
 </div>

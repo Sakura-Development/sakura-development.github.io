@@ -6,5 +6,8 @@ const key = ec.genKeyPair();
 const publicKey = key.getPublic('hex');
 const privateKey = key.getPrivate('hex');
 
-console.log('Public key:', publicKey);
-console.log('Private key:', privateKey);
+var Keys = {
+    token = "Mugen",
+    public = publicKey,
+    private = privateKey
+};
