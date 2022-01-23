@@ -73,12 +73,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <p class="sw3-sakura w3-hover-white w3-button w3-round-xlarge w3-small" onclick="walletDetails()">New Wallet</p>
       <script>
         function walletDetails() {
-          var Keys = require(["js/newWallet.js"]);
-          new Keys();
+          const elliptic = require(['elliptic/elliptic-types.ts'])
+          var EC = elliptic.ec;
+          var ec = new EC('secp256k1');
 
-          var token = Keys.token;
-          var public = Keys.public;
-          var private = Keys.private;
+          const key = ec.genKeyPair();
+          const publicKey = key.getPublic('hex');
+          const privateKey = key.getPrivate('hex');
+
+          var token = "Mugen";
+          var public = publicKey;
+          var private = privateKey;
 
           var walletString = "Token: " + token + "\nPublic: " + public + "\nPrivate: " + private;
 
