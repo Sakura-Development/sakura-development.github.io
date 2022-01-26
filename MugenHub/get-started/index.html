@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
 <script src="https://kit.fontawesome.com/f712031e9d.js" crossorigin="anonymous"></script>
-<script src="js/requireJs.js"></script>
 <script type="text/javascript" src="js/newWallet.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -52,7 +51,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <h1 class="sw3-text-sakura">Mugen Wallets</h1>
       <h5 class="w3-padding-32 w3-text-white">Simplicity in complexity.</h5>
 
-      <p class="w3-text-white">Mugen wallets are designed for simplicity. There currently isn't a GUI, but we will implement it soon.</p>
+      <p class="w3-text-white">Mugen wallets are designed for simplicity. They use usernames and passwords as opposed to the usual long strings.</p>
     </div>
 
     <div class="w3-third w3-center sw3-xxxjumbo">
@@ -69,28 +68,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird w3-text-white">
-      <h1 class="sw3-text-sakura">Generate Wallet</h1>
-      <p class="sw3-sakura w3-hover-white w3-button w3-round-xlarge w3-small" onclick="walletDetails()">New Wallet</p>
-      <script>
-        function walletDetails() {
-          const elliptic = require(['elliptic/elliptic-types.ts'])
-          var EC = elliptic.ec;
-          var ec = new EC('secp256k1');
-
-          const key = ec.genKeyPair();
-          const publicKey = key.getPublic('hex');
-          const privateKey = key.getPrivate('hex');
-
-          var token = "Mugen";
-          var public = publicKey;
-          var private = privateKey;
-
-          var walletString = "Token: " + token + "\nPublic: " + public + "\nPrivate: " + private;
-
-          document.getElementById("walletInfo").innerHTML = walletString;
-        }
-      </script>
-      <p id="walletInfo" class="sw3-text-white"></p>
+      <h1 class="sw3-text-sakura">Create Mugen Account</h1>
+      <button id="register" class="w3-button sw3-sakura">Register<button></p>
     </div>
   </div>
 </div>
