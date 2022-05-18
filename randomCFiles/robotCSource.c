@@ -10,10 +10,10 @@
 task main()
 {
     // Initialize variables
-    int waitTime = 2;
-    int speed = 40;
-    int maxEncode = 115;
-    int minEncode = 0;
+    int waitTime = 4;
+    int speed = 50;
+    int maxEncode = 120;
+    int minEncode = -115;
 
     // Initializes flashlight and off LED
     turnFlashlightOn(port3,100);
@@ -25,7 +25,7 @@ task main()
     // Essentially while(true) constantly runs
     while(1==1) {
         // Detects when the light sensor is NOT BELOW OR EQUAL TO 52
-        if(SensorValue[in1]>52) {
+        if(SensorValue[in1]>=100) {
             // Toggle LEDs
             turnLEDOff(dgtl3);
             turnLEDOn(dgtl4);
@@ -38,11 +38,10 @@ task main()
             untilEncoderCounts(maxEncode,dgtl1);
             stopMotor(port2);
 
-            // Wait
-            wait(waitTime);
+            wait(waitTime/4);
 
             // Run motor until encoder hits bottom
-            startMotor(port2,speed);
+            startMotor(port2,40);
             untilEncoderCounts(minEncode,dgtl1);
             stopMotor(port2);
 
