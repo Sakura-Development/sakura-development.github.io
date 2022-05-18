@@ -25,7 +25,7 @@ task main()
     // Essentially while(true) constantly runs
     while(1==1) {
         // Detects when the light sensor is NOT BELOW OR EQUAL TO 52
-        if(SensorValue[lightsensor]!>=52) {
+        if(SensorValue[in1]>52) {
             // Toggle LEDs
             turnLEDOff(dgtl3);
             turnLEDOn(dgtl4);
